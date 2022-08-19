@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
+  <title>Agência de Viagens Atirson</title>
+</head>
+<body class="container">
+  <header class="header">
+    <div class=" limit-area content-header">
+      <img src="img/local-logo.png" alt="local-logo" class="logo-header">
+      <span class="title-header">Agência de viagens</span>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="background-form">
+      <div class="limit-area form">
+        <div class="header-form">
+          <img src="img/aviao.png" alt="aviao" class="logo-airplan">
+          <p class="title-form">Solicite um orçamento</p>
+        </div>
+        <div class="content-form">
+          <h1 class="title-content-form">Informe seus dados</h1>
+          <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/
+          ">
+            <div class="spacing-form">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" placeholder="Nome completo" required>
+            </div>
+            <div class="spacing-form">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+            </div>
+            <div class="spacing-form">
+              <label for="tel">Celular</label>
+              <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+            <div class="spacing-date-origin">
+              <div class="break-date-origin">
+                <label for="date-go">Data de ida</label>
+                <input type="date" name="date-go" id="date-go">
+              </div>
+              <div class="break-date-origin">
+                <label for="date-back">Data de volta</label>
+                <input type="date" name="date-back" id="date-back">
+              </div>
+            </div>
+            <div class="spacing-date-origin">
+              <div class="break-date-origin">
+                <label for="origin">Origem</label>
+                <select name="origin" id="origin" required>
+                  <option value="">Partindo de</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                  <option value="DF">Distrito Federal</option>
+                </select>
+              </div>
+              <div class="break-date-origin">
+                <label for="fate">Destino</label>
+                <select name="fate" id="fate" required>
+                  <option value="">Indo para</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                  <option value="DF">Distrito Federal</option>
+                </select>
+              </div>
+            </div>
+            <div class="spacing-form">
+              <label for="childrens-bed">Quarto com cama infantil?</label>
+              <div class="radio-checkbox">
+                <div>
+                  <input type="radio" name="childrens-bed" id="childrens-bed-yes" value="sim">
+                  <label for="childrens-bed-yes">Sim</label>
+                </div>
+                <div>
+                  <input type="radio" name="childrens-bed" id="childrens-bed-not">
+                  <label for="childrens-bed-not">Não</label>
+                </div>
+              </div>
+            </div>
+            <div class="spacing-form">
+              <label for="preferences">Preferências da hospedagem</label>
+              <div class="radio-checkbox">
+                <div>
+                  <input type="checkbox" name="preferences" id="swimming-pool" value="swimming-pool">
+                  <label for="swimming-pool">Piscina</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="preferences" id="wifi" value="wifi">
+                  <label for="wifi">Wi-fi</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="preferences" id="garage" value="garage">
+                  <label for="garage">Garagem</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="preferences" id="suite" value="suite">
+                  <label for="suite">Suíte</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="button-form">Solicitar orçamento</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+</body>
+</html>
