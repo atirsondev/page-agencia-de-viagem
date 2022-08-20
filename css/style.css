@@ -5,6 +5,10 @@
   font-family: raleway;
 }
 
+.main-content {
+  background-color: rgba(97, 91, 91, 0.288);
+}
+
 .limit-area {
   max-width: 1024px;
   margin: 0 auto;
@@ -118,4 +122,253 @@
   color: #fff;
   border-radius: 15px;
   cursor: pointer;
+}
+
+.container-images {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.main-image-offers {
+  background-image: url('../img/rio.jpg');
+  width: 480px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-image-offers, .manaus, .sao-paulo, .niteroi, .maranhao {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.main-image-offers:hover, .manaus:hover, .sao-paulo:hover, .niteroi:hover, .maranhao:hover {
+  box-shadow: 0 0 15px 5px rgb(143, 139, 139);
+}
+
+.description-img-effers {
+  color: #fff;
+  text-align: left;
+  background-color: rgb(0, 0, 0, 70%);
+  width: 100%;
+  padding: 5px 7px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container-images-small {
+  width: 480px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.image-small {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+  min-width: 230px;
+}
+
+.manaus {
+  background-image: url('../img/manaus.jpg');
+}
+
+.sao-paulo {
+  background-image: url('../img/saopaulo.jpg');
+}
+
+.niteroi {
+  background-image: url('../img/niteroi.jpg');
+}
+
+.maranhao {
+  background-image: url('../img/maranhao.jpg');
+}
+
+.title-global {
+  padding: 25px 0 10px 0;
+}
+
+.description-global {
+  padding-bottom: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-nature {
+  margin-bottom: 20px;
+}
+
+.container-img-nature {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-nature {
+  width: 481px;
+  height: 400px;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.content-nature-img {
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+}
+
+.title-nature-img, .description-nature-img {
+  padding-bottom: 8px;
+}
+
+.lencois-maranhenses, .santa-barbara {
+ 
+  border: 2px solid transparent;
+}
+
+.lencois-maranhenses:hover, .santa-barbara:hover {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(95, 15, 170);
+}
+
+.limit-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.icone-contact-social {
+  width: 20px;
+}
+
+.contact, .social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #fff;
+}
+
+.contact div, .social div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+.offers, .container-nature {
+  padding: 10px;
+}
+
+@media(max-width: 1014px) {
+  .main-image-offers, .container-images-small, .image-nature {
+    width: 100%;
+    background-size: cover;
+  }
+  .container-img-nature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-global, .description-global, .content-nature-img {
+    text-align: center;
+  }
+}
+
+@media(max-width: 554px) {
+  .container-images-small {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "manaus manaus"
+    "sao-paulo sao-paulo"
+    "niteroi niteroi"
+    "maranhao maranhao";
+    gap: 15px;
+  }
+  .manaus {
+    grid-area: manaus;
+  }
+  .sao-paulo {
+    grid-area: sao-paulo;
+  }
+  .niteroi {
+    grid-area: niteroi;
+  }
+  .maranhao {
+    grid-area: maranhao;
+  }
+  .spacing-date-origin {
+    display: flex;
+    flex-direction: column;
+  }
+  .break-date-origin {
+    width: 100%;
+  }
+  .background-form {
+    background-image: url('../img/bahia.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 860px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .radio-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .button-form {
+    width: 100%;
+  }
+  .limit-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-footer {
+    font-size: 22px;
+  }
+  .description-footer {
+    font-size: 14px;
+  }
+  .icone-contact-social {
+    width: 15px;
+  }
+  .contact, .social, .contact div, .social div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .image-nature {
+    height: 200px;
+  }
+
+  .main-image-offers {
+    height: 140px;
+  }
 }

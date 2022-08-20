@@ -24,8 +24,7 @@
         </div>
         <div class="content-form">
           <h1 class="title-content-form">Informe seus dados</h1>
-          <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/
-          ">
+          <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
             <div class="spacing-form">
               <label for="name">Nome</label>
               <input type="text" name="name" id="name" placeholder="Nome completo" required>
@@ -35,17 +34,17 @@
               <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
             </div>
             <div class="spacing-form">
-              <label for="tel">Celular</label>
-              <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required>
+              <label for="tel">Celular (opcional)</label>
+              <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx">
             </div>
             <div class="spacing-date-origin">
               <div class="break-date-origin">
                 <label for="date-go">Data de ida</label>
-                <input type="date" name="date-go" id="date-go">
+                <input type="date" name="date-go" id="date-go" required>
               </div>
               <div class="break-date-origin">
                 <label for="date-back">Data de volta</label>
-                <input type="date" name="date-back" id="date-back">
+                <input type="date" name="date-back" id="date-back" required>
               </div>
             </div>
             <div class="spacing-date-origin">
@@ -120,11 +119,11 @@
               <label for="childrens-bed">Quarto com cama infantil?</label>
               <div class="radio-checkbox">
                 <div>
-                  <input type="radio" name="childrens-bed" id="childrens-bed-yes" value="sim">
+                  <input type="radio" name="childrens-bed" id="childrens-bed-yes" value="sim" required>
                   <label for="childrens-bed-yes">Sim</label>
                 </div>
                 <div>
-                  <input type="radio" name="childrens-bed" id="childrens-bed-not">
+                  <input type="radio" name="childrens-bed" id="childrens-bed-not" required>
                   <label for="childrens-bed-not">Não</label>
                 </div>
               </div>
@@ -155,7 +154,67 @@
         </div>
       </div>
     </section>
+    <section class="limit-area offers">
+      <h2 class="title-global">Ofertas</h2>
+      <p class="description-global">Com até <strong>50%</strong> de desconto</p>
+      <div class="container-images">
+        <div class="main-image-offers">
+          <p class="description-img-effers">Rio de Janeiro</p>
+        </div>
+        <div class="container-images-small">
+          <div class="image-small manaus">
+            <p class="description-img-effers">Manaus</p>
+          </div>
+          <div class="image-small sao-paulo">
+            <p class="description-img-effers">São Paulo</p>
+          </div>
+          <div class="image-small niteroi">
+            <p class="description-img-effers">Niteroi</p>
+          </div>
+          <div class="image-small maranhao">
+            <p class="description-img-effers">Maranhão</p>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </section>
+    <section class="limit-area container-nature">
+      <h2 class="title-global">Explore a Natureza</h2>
+      <p class="description-global">Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
+      <div class="container-img-nature">
+        <div class="lencois-maranhenses">
+          <img src="img/lencol.jpg" alt="lencois-maranhenses" class="image-nature">
+          <div class="content-nature-img">
+            <h3 class="title-nature-img">Lençois Maranhenses, Brasil</h3>
+            <p class="description-nature-img">ida e volta a partir de R$790,00</p>
+          </div>
+        </div>
+        <div class="santa-barbara">
+          <img src="img/goias.jpg" alt="cachoeira santa-barbara" class="image-nature">
+          <div class="content-nature-img">
+            <h3 class="title-nature-img">Cachoeira Santa Bárbara, Brasil</h3>
+            <p class="description-nature-img">ida e volta por R$420,00</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="limit-area limit-footer">
+      <div class="contact">
+        <h2 class="title-footer">Contato</h2>
+        <div><img src="img/local.png" alt="local" class="icone-contact-social"><p class="description-footer">Rio de Janeiro-RJ</p></div>
+        <div><img src="img/telefone.png" alt="telefone" class="icone-contact-social"><p>Telefone (21) 99999-9999</p></div>
+        <div><img src="img/email.png" alt="email" class="icone-contact-social"><p>Email: contato@agencia.com.br</p></div>
+      </div>
+      <div class="social">
+        <h2 class="title-footer">Nossas Redes Sociais</h2>
+        <div><img src="img/fb.png" alt="facebook" class="icone-contact-social"><p class="description-footer">/AgenciaDeViagem</p></div>
+        <div><img src="img/ig.png" alt="instagram" class="icone-contact-social"><p class="description-footer">@AgenciaDeViagem</p></div>
+        <div><img src="img/tt.png" alt="twitter" class="icone-contact-social"><p class="description-footer">@AgenciaDeViagem</p></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
